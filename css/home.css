@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background: #ecf0f3;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background-color: #00ced1;
+}
+
+.logo {
+	margin-right: 20px;
+}
+
+nav {
+	margin-left: auto;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+	font-weight: 600;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #333;
+}
+
+.login a {
+	text-decoration: none;
+	background-color: #333;
+	display: inline-block;
+	font-size: 18px;
+	padding: 10px;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: 600;
+	transition: background-color 0.3s ease;
+}
+
+.login a:hover {
+	background-color: #00ced1;
+}
+
+.hero-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+}
+
+.pakar img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.content {
+	max-width: 600px;
+}
+
+.content h1 {
+	font-size: 2.5em;
+	color: #00ced1;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	font-weight: 600;
+}
+
+.content .highlight {
+	color: #333;
+}
+
+.content p {
+	font-size: 1.2em;
+	color: #333;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	nav {
+		margin: 20px 0 0 auto;
+	}
+
+	.login {
+		margin-top: 10px;
+	}
+
+	.hero-section {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.content {
+		margin-top: 20px;
+	}
+}
